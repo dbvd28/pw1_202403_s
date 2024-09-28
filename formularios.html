@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <h1>Formularios de HTML<h1>
- <form action="formularios.html" method="get">
-    <label for="txtNombre">Nombre</label>
-    <input id="txtNombre" name="txtName" type="text" placeholder="Nombre Completo"/>
-    <br/>
-    <label for="txtEmail">Correo</label>
-    <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@gmail.com"/>
-    <br/>
-    <button type="submit"name="btnEnviar">Enviar</button>
- </form>
+            <form action="formularios.html" method="get">
+                <label for="txtNombre">Nombre</label>
+                <input id="txtNombre" name="txtName" type="text" placeholder="Nombre Completo" />
+                <br />
+                <label for="txtEmail">Correo</label>
+                <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@gmail.com" />
+                <br />
+                <label>Ciudad</label>
+                <label for="optTeg">Tegucigalpa</label>
+                <input type="radio" id="optTeg" name="optCiudad" value="TEG">
+                &nbsp;
+                <label for="optSPS">San Pedro Sula</label>
+                <input type="radio" id="optSPS" name="optCiudad" value="SPS">
+                &nbsp;
+                <label for="optCHL">Choluteca</label>
+                <input type="radio" id="optCHL" name="optCiudad" value="CHL" checked>
+                &nbsp;
+                <br/>
+                <label for="cmbCiudad">Ciudades 2</label>
+                <select name="cmbCiudad" id="cmbCiudad">
+                    <option value="TEG">Teguicgalpa</option>
+                    <option value="SPS">San Pedro Sula</option>
+                    <option value="CHL">Choluteca</option>
+                </select>
+                <br/>
+                <label for="txtLongtext">Texto Largo</label> <br/>
+                <textarea name="txtBig" id="txtLongtext" placeholder="Texto muy muy lejano"
+                ></textarea>
+                <button type="submit" name="btnEnviar">Enviar</button>
+            </form>
 </body>
+
 </html>
