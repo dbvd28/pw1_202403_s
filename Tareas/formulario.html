@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestamos estudiantiles</title>
+  </head>
+  <body>
+    <h1>Solicitud de prestamos</h1>
+    <form action="formulario.html" method="get">
+      <label for="txtNombre">Nombre</label>
+      <input
+        id="txtNombre"
+        name="txtName"
+        type="text"
+        placeholder="Nombre Completo"
+      />
+      <br />
+      <br/>
+      <label for="txtEmail">Correo</label>
+      <input
+        id="txtEmail"
+        name="txtEmail"
+        type="email"
+        placeholder="tucorreo@gmail.com"
+      />
+      <br />
+      <br/>
+      <label for="txtNumero">Numero de telefono</label>
+      <input
+        id="txtNumero"
+        name="txtPhone"
+        type="text"
+        placeholder="+504"
+      />
+      <br />
+      <br/>
+      <label for="txtDireccion">Direccion actual</label>
+      <input
+        id="txtDireccion"
+        name="txtaddress"
+        type="text"
+      />
+      <br />
+      <br/>
+      <label for="txtCiudad">Ciudad</label>
+      <input
+        id="txtCiudad"
+        name="txtcity"
+        type="text"
+      />
+      <br />
+      <br/>
+      <label for="cmbEstado">Estado Civil</label>
+      <select name="cmbEstado" id="cmbEstado">
+        <option value="Sol">Soltero</option>
+        <option value="Cas">Casado</option>
+        <option value="Viu">Viudo</option>
+    </select>
+      <br />
+      <br/>
+      <label for="txtPostal">Codigo postal</label>
+      <input
+        id="txtPostal"
+        name="txtpostal"
+        type="text"
+      />
+      <br />
+      <br/>
+      <label>Nivel de educacion</label>
+      <input type="radio" id="optPrep" name="optEducacion" value="Prep">
+      <label for="optPrep">Preparatoria</label>
+      &nbsp;
+      <input type="radio" id="optLic" name="optEducacion" value="Lic">
+      <label for="optLic">Licenciatura</label>
+      &nbsp;
+      <input type="radio" id="optMast" name="optEducacion" value="Mas">
+      <label for="optMast">Maestria</label>
+      &nbsp;
+      <input type="radio" id="optDoc" name="optEducacion" value="Doc">
+      <label for="optDoc">Doctorado</label>
+      <br/>
+      <br/>
+      <label>Programas de estudio </label>
+      <input type="radio" id="optICC" name="optPrograma" value="icc">
+      <label for="optICC">Ciencias de la computación</label>
+      &nbsp;
+      <input type="radio" id="optING" name="optPrograma" value="inge">
+      <label for="optING">Ingeniería</label>
+      &nbsp;
+      <input type="radio" id="optECO" name="optPrograma" value="econ">
+      <label for="optECO">Economía</label>
+      &nbsp;
+      <input type="radio" id="optART" name="optPrograma" value="art">
+      <label for="optART">Artes</label>
+      &nbsp;
+      <input type="radio" id="optOTH" name="optPrograma" value="other">
+      <label for="optOTH">Otros</label>
+      <br/>
+      <br/>
+      <label for="txtMonto">Monto del prestamo solicitado</label>
+      <input
+        id="txtMonto"
+        name="txtmoney"
+        type="text"
+        placeholder="500L"
+      />
+      <br />
+      <br/>
+      <label for="txtRazon">Razon para solicitar el prestamo</label><br/>
+      <textarea name="txtreason" id="txtRazon" placeholder="Adjunte su razon aqui"
+      ></textarea>
+      <br/>
+      <button type="submit" name="btnsubmit">Enviar informacion</button>
+    </form>
+  </body>
+</html>
