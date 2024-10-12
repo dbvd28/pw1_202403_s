@@ -1,0 +1,42 @@
+body{
+    background-color: #000;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin: 0.5rem 1rem;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+
+}
+header nav ul li a{
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    background-color: #000;
+    color: #ddd;
+    transition: background-color 1s ease;
+}
+header nav ul li a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+main{
+    color: #000;
+    background-color: gray;
+    padding: 1rem;
+}
+main h2{
+    margin:0.2px
+}
+a{
+    color:#000;
+    background-color: aqua;
+    line-height: 1.5;
+}
