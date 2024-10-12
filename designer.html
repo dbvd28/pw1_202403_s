@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica examen</title>
+  </head>
+  <body>
+    <header>
+      <h1>Examen Diego</h1>
+      <nav>
+        <ol id="Secciones">
+          <li><a href="#Capitulo1">Prueba Tablas</a></li>
+          <li><a href="#Capitulo2">Prueba Formularios</a></li>
+          <li><a href="#Capitulo3">Prueba Multimedia</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section id="Capitulo1">
+        <h2>Tablas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        Personas que viven en los 4 departamentos
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Francisco Morazan</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Cortes</td>
+                    <td>52</td>
+                </tr>
+                <tr>
+                    <td>Choluteca</td>
+                    <td>102</td>
+                </tr>
+                <tr>
+                    <td>Comayagua</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>324</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis
+          minus excepturi assumenda, commodi et beatae accusamus sit fuga
+          praesentium distinctio reprehenderit suscipit neque eos illum fugiat
+          rerum dolor quos.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+          repellat ipsa aperiam error quasi libero voluptas dolorum blanditiis
+          reprehenderit maiores quia enim, exercitationem assumenda. Neque
+          accusantium inventore aut eius quibusdam!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          provident ratione obcaecati et quasi maiores est necessitatibus,
+          itaque molestias, ullam nihil rerum voluptates repellat. Sit molestias
+          soluta odio voluptatibus laborum?
+        </p>
+      </section>
+      <section id="Capitulo2">
+        <h2>Formularios</h2>
+        <form action="designer.html" method="get">
+            <label for="txtNombre">Nombre Completo</label>
+            <input type="text" id="txtNombre" name="txtnombre" placeholder="Nombrecompleto">
+            <br/>
+            <label for="cmbestado">Estado</label>
+            &nbsp;
+            <select name="cmbestado" id="cmbestado">
+                <option value="Soltero">Soltero</option>
+                <option value="Viudo">Viudo</option>
+                <option value="Casado">Casado</option>
+            </select>
+            <br/>
+            <label for="Descripcion">Descripcion</label>
+            <br/>
+            <textarea name="Descripcion" id="Descripcion" placeholder="Descripcion de si misma"></textarea>
+        </form>
+      </section>
+      <section id="Capitulo3">
+        <h2>Multimedia</h2>
+        <h3>Audio</h3>
+        <audio controls >
+            <source srcset="Media/horse.mp3" type="audio/mp3">
+            <source src="Media/horse.ogg" type="audio/ogg">
+        </audio>
+        <br/>
+        <h3>Video</h3>
+        <video controls >
+          <source srcset="Media/mov_bbb.ogg" type="video/ogg">
+          <source src="Media/mov_bbb.mp4" type="video/mp4">
+        </video>
+      </section>
+    </main>
+    <footer>
+      &copy; Derechos reservados de Diego Varela
+    </footer>
+  </body>
+</html>
