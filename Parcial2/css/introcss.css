@@ -1,99 +1,93 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     background-color: #000;
-    color: white;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header h1{
-    margin: 0.5rem 1rem;
-}
-header nav ul{
-    display: flex;
-    list-style: none;
-
-}
-header nav ul{
+    color:#fff;
     margin:0px;
-    margin-right: 1rem;
+    padding:0px;
 }
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0px;
+    margin-left:1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+}
+
 header nav ul li a{
     display: block;
     padding: 0.75rem 1rem;
     text-decoration: none;
-    background-color: #ddd;
     color: #ddd;
+    border-bottom: 1px solid rgb(177, 175, 175);
     transition: background-color 1s ease;
 }
+
 header nav ul li a:hover{
-    background-color: #ddd;
-    color: #000;
+    background-color: #eee;
+    color:#333
 }
 
-header h1{
-    margin: 0px;
-    margin-left: 1rem;
-    font-size: 1.5rem;
+main {
+    background-color: #ddd;
+    color:#333;
+    padding:0;
 }
-main{
-    color: #000;
-    background-color: gray;
+
+main h2 {
+    margin:0.2px;
 }
-main h2{
-    margin:0.2px
-}
-a{
-    color:#000;
-    background-color: aqua;
-    line-height: 1.5;
-}
-/*Este es para definir los diferentes tipos de boxes*/
-/*.hero-panel{
-    background-color: #21890c;
-    display: inline-block;
-    padding: 1rem ;
-    border: solid 1px black;
-    border-left: solid 1px red;
-    border-right: solid 1px red;
-    margin:3rem;
-    width: 600px;
-    
-}*/
-.hero-panel{
-    position: relative;
+
+.hero-panel {
+    position:relative;
     overflow: hidden;
-    min-height: 80vh;
+    background-color:#21890c;
+    height: 80vh;
 }
-.hero-panel img{
+
+.hero-panel img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
-.hero-panel div{
+
+.hero-panel div {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: rgba(255,255,255,0.8);
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     border-radius: 17px;
     transform: translateX(-50%) translateY(-50%);
 }
 .hero-panel div a{
     align-self: center;
-    display: inline-block;
-    padding: 1.2rem 2rem;
-    border: 1px solid rgb(34, 207, 7);
-    background-color: rgb(25, 95, 16);
-    color:#fff;
+    display:inline-block;
+    padding:1rem 2rem;
+    border: 1px solid #134e07;
+    background-color: #21890c;
+    color: #fff;
     text-decoration: none;
     margin: 0.5rem auto;
     box-shadow: 3px 3px 5px #000;
@@ -105,5 +99,101 @@ a{
 }
 .hero-panel div.cuadrante2{
     top:25%;
-    left:25%
+    left:75%;
+}
+.Precios {
+    display: flex;
+    padding: 0.5rem;
+}
+ .card{
+    position: relative;
+border: 1px solid black;
+width: 300px;
+background-color: white;
+}
+ .card img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+object-position: center center;
+}
+.card h3, .card p{
+    margin: 0px;
+    padding: 0.5rem;
+}
+.card p{
+    font-size: 0.8rem;
+}
+.card a{
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    background-color: #21890c;
+    color: #000;
+}
+.card .precio{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top:200px;
+    right:1rem;
+    background-color: orangered;
+    transform: translateY(-50%);
+    font-weight: bold;
+    box-shadow: 1px 1ox 10px rgb(95, 62, 21);
+}
+.card.highlighted{
+    background-color: green ;
+}
+.card.highlightedb a{
+background-color: paleturquoise;
+}
+.card{
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+@media (min-width:720px){
+    body {
+        background-color: #134e07;
+    }
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1{
+        padding: 0px;
+        text-align: left;
+    }
+    header nav ul{
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+    header nav ul li a{
+        border: none;
+    }
+    .Precios{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .Precios .card:nth-child(1),:nth-child(3){
+        transform: scale(0.8) translateY(10%); 
+    }
+    .Precios .card:hover{
+        transform: scale(1.1);
+    }
+}
+@media (min-width:1025px){
+    body {
+        background-color: #651900;
+    }
 }
